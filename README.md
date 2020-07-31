@@ -8,3 +8,13 @@
 </p>
 
 # Laravel 7 Ecommerce
+
+git clone https://github.com/SanishGrg/Laravel7-ecommerce.git Laravel7-ecommerce
+cd Laravel7-ecommerce
+cp .env.example .env
+composer install
+php artisan key:generate
+php artisan migrate
+
+// if you want dummy data and users to get generated
+php artisan db:seed
